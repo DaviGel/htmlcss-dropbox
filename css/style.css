@@ -7,3 +7,72 @@
 }
 
 /* #endregion */
+
+/* #region COMMON */
+
+.button {
+  all: unset;
+  padding: 10px 17px;
+}
+
+.button.blue {
+  background-color: #0061ff;
+  color: white;
+}
+
+/* #endregion */
+
+/* #region BODY */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* #endregion */
+
+/* #region HEADER */
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px 0 20px;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+/* Aggiungi il bordo inferiore a tutti gli elementi tranne all'ultimo ovvero il bottone */
+nav .left-menu li:hover,
+nav .right-menu li:hover:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #464646;
+  vertical-align: middle;
+}
+
+/* Ultimo elemento del right-menu ovvero il bottone "Inizia" */
+nav .right-menu ul li:last-child {
+  padding: 0;
+}
+
+/* #endregion */
+
+/* #region MAIN */
+
+main {
+  padding-top: 80px;
+}
+
+/* #endregion */
