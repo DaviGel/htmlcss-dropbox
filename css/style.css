@@ -12,6 +12,7 @@
 
 .container-one {
   width: 1180px;
+  margin: 0 auto;
 }
 
 .button {
@@ -37,6 +38,11 @@ body {
 
 /* #region HEADER */
 
+header {
+  background-color: #b4d0e7;
+  height: 737px;
+}
+
 nav {
   height: 80px;
   display: flex;
@@ -47,6 +53,7 @@ nav {
   left: 0;
   right: 0;
   padding: 0 20px 0 20px;
+  background-color: white;
 }
 
 nav li {
@@ -70,6 +77,31 @@ nav li a {
 /* Ultimo elemento del right-menu ovvero il bottone "Inizia" */
 nav .right-menu ul li:last-child {
   padding: 0;
+}
+
+h1 {
+  font-size: 72px;
+  padding-top: 105px;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 72px;
+}
+
+.jumbotron .left-content,
+.jumbotron .right-content img {
+  width: 100%;
+}
+
+.jumbotron .left-content button {
+  margin: 32px 0 32px 0;
+}
+
+.arrow-down {
+  font-size: 48px;
+  margin-top: 80px;
 }
 
 /* #endregion */
