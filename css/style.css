@@ -10,6 +10,10 @@
 
 /* #region COMMON */
 
+.container-one {
+  width: 1180px;
+}
+
 .button {
   all: unset;
   padding: 10px 17px;
@@ -26,6 +30,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  padding-top: 80px;
 }
 
 /* #endregion */
@@ -65,14 +70,6 @@ nav li a {
 /* Ultimo elemento del right-menu ovvero il bottone "Inizia" */
 nav .right-menu ul li:last-child {
   padding: 0;
-}
-
-/* #endregion */
-
-/* #region MAIN */
-
-main {
-  padding-top: 80px;
 }
 
 /* #endregion */
