@@ -395,18 +395,40 @@ main .invitation h2 {
   gap: 230px;
 }
 
+/* Ho tolto display flex per gestire con più facilità l'effetto display none / display block on hover senza dovermi occupare del fatto che l'elemento flexa */
 .question {
   padding: 45px 0;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .faq h2 {
   margin-bottom: 70px;
 }
 
+.faq .question:hover p {
+  display: block;
+}
+
+.faq .question:hover .angle-down {
+  display: none;
+}
+
+.faq .question:hover .angle-up {
+  display: inline;
+}
+
 .question span {
-  margin-right: 45px;
+  margin: 0 45px 0 270px;
+}
+
+.question p {
+  display: none;
+  margin-top: 20px;
+}
+
+.question .angle-up {
+  display: none;
 }
 
 /* #endregion */
