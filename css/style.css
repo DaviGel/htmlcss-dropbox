@@ -11,8 +11,10 @@
 /* #region COMMON */
 
 .container-one {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
+  position: relative;
+  bottom: -80px;
 }
 
 .container-two {
@@ -20,16 +22,30 @@
   margin: 0 auto;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   all: unset;
   padding: 10px 17px;
   cursor: pointer;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .button.blue {
-  background-color: #0061ff;
+  background-color: rgb(0, 97, 255);
   color: white;
-  white-space: nowrap;
+}
+
+.button.white {
+  background-color: white;
+}
+
+.button.blue:hover {
+  background-color: rgba(0, 97, 255, 0.7);
 }
 
 .button.graybtn {
@@ -76,6 +92,7 @@
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* #endregion */
@@ -91,14 +108,11 @@ body {
 
 /* #region HEADER */
 
-header {
-  background-color: #b4d0e7;
-  height: 737px;
-}
-
 nav {
+  z-index: 1;
+  line-height: 80px;
+  box-shadow: 0 1px 2px #dedede;
   height: 80px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -111,20 +125,21 @@ nav {
 
 nav ul li {
   list-style-type: none;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid transparent;
 }
 
-/* Aggiungi il bordo inferiore a tutti gli elementi tranne all'ultimo ovvero il bottone
-nav .left-menu li:hover,
+/* Aggiungi il bordo inferiore a tutti gli elementi tranne all'ultimo ovvero il bottone */
+nav .left-menu li:hover:not(:first-child),
 nav .right-menu li:hover:not(:last-child) {
-  border-bottom: 1px solid black;
-} */
+  border-bottom: 2px solid currentColor;
+}
 
-nav li a {
+nav ul li a {
   text-decoration: none;
   color: #464646;
-  vertical-align: middle;
 }
 
 /* Ultimo elemento del right-menu ovvero il bottone "Inizia" */
@@ -134,11 +149,9 @@ nav .right-menu ul li:last-child {
 
 h1 {
   font-size: 72px;
-  padding-top: 105px;
 }
 
 .jumbotron {
-  display: flex;
   justify-content: flex-start;
   margin-top: 72px;
 }
@@ -153,6 +166,8 @@ h1 {
 }
 
 .arrow-down {
+  position: absolute;
+  bottom: 100px;
   font-size: 48px;
   margin-top: 80px;
 }
@@ -160,6 +175,10 @@ h1 {
 /* #endregion */
 
 /* #region MAIN */
+
+#jumbotron {
+  background-color: #b4d0e7;
+}
 
 main .first-main-title {
   margin-top: 165px;
@@ -179,7 +198,6 @@ main .first-input {
 }
 
 main .three-col-layout {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
@@ -192,7 +210,6 @@ main .three-col-layout i {
 main .first-col,
 main .second-col,
 main .third-col {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 300px;
@@ -232,14 +249,12 @@ main .one-col-layout {
 }
 
 main .one-col-layout .flex-container {
-  display: flex;
   align-items: flex-start;
   border: 1px solid #d0d0d3;
   padding: 40px 30px;
 }
 
 main .hero-section {
-  display: flex;
   gap: 52px;
   margin: 150px 0 170px 0;
 }
@@ -263,7 +278,6 @@ main .grid-section h2:first-child {
 }
 
 main .six-col-layout {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 55px;
@@ -284,6 +298,104 @@ main .grid-section h3 {
 main .h2-title {
   margin: 210px 0 65px 0;
   font-size: xx-large;
+}
+
+main .banner.d-flex .col {
+  /* padding: 80px; */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 320px;
+}
+
+main .banner.d-flex .central-column {
+  justify-content: flex-start;
+  width: 640px;
+  height: 640px;
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+main .banner.d-flex .col img {
+  padding: 80px;
+}
+
+main .banner.d-flex .central-column img {
+  padding: 0;
+  max-width: 270px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+}
+
+.box img {
+  object-fit: contain;
+}
+
+.box.one {
+  background-color: #a2d39b;
+}
+
+.box.two {
+  background-color: #0093ce;
+}
+
+.box.three {
+  background-color: #61082b;
+}
+.box.four {
+  background-color: #ff1c1c;
+}
+
+.box.five {
+  background-color: #d5001f;
+}
+
+.box.six {
+  background-color: #0d2481;
+}
+
+.box.seven {
+  background-color: #b4d0e7;
+}
+
+.box.eight {
+  background-color: #ffd830;
+}
+
+.azure-background {
+  background-color: #b4d0e7;
+  padding: 140px 0;
+  margin-bottom: 165px;
+}
+
+main .invitation h2 {
+  color: #61082b;
+  font-size: 40px;
+  flex-grow: 0;
+}
+
+.special-justify {
+  justify-content: center;
+  align-items: center;
+  gap: 230px;
+}
+
+.question {
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq h2 {
+  margin-bottom: 70px;
+}
+
+.question span {
+  margin-right: 45px;
 }
 
 /* #endregion */
