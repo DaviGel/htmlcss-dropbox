@@ -18,8 +18,14 @@
 }
 
 .container-two {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.container-three {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 108px 0 120px;
 }
 
 .d-flex {
@@ -67,6 +73,11 @@
 .separator {
   width: 48px;
   margin: 40px 0 54px 0;
+}
+
+.separator-two {
+  width: 120px;
+  margin: 120px 0 50px 0;
 }
 
 .first-bottom-margin {
@@ -396,6 +407,33 @@ main .invitation h2 {
 
 .question span {
   margin-right: 45px;
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-items {
+  justify-content: space-between;
+}
+
+footer .footer-items ul {
+  margin-top: 35px;
+}
+
+footer .footer-items ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+footer .footer-items ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* #endregion */
