@@ -366,6 +366,7 @@ main .banner.d-flex .central-column img {
   right: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
+  filter: invert(1);
 }
 
 .bg.center {
@@ -378,6 +379,7 @@ main .banner.d-flex .central-column img {
 .bg.center img {
   position: static;
   transform: translate(0);
+  filter: invert(0);
 }
 
 .bg.one {
