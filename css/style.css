@@ -10,6 +10,10 @@
 
 /* #region COMMON */
 
+:root {
+  --blue-color: #0061ff;
+}
+
 .container-one {
   max-width: 1180px;
   margin: 0 auto;
@@ -89,12 +93,12 @@
 }
 
 .blue-color {
-  color: #0061ff;
+  color: (--blue-color);
 }
 
 .link-style {
-  color: #0061ff;
-  text-decoration-color: #0061ff;
+  color: (--blue-color);
+  text-decoration-color: (--blue-color);
 }
 
 .mb150 {
