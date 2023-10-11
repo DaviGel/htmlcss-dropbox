@@ -84,6 +84,11 @@
   margin: 120px 0 50px 0;
 }
 
+.separator-three {
+  width: 108px;
+  margin: 50px 0;
+}
+
 .first-bottom-margin {
   margin-top: 40px;
 }
@@ -342,46 +347,68 @@ main .banner.d-flex .central-column img {
   max-width: 270px;
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  height: 320px;
+.square {
+  width: calc(100% / 3);
+  height: calc(100vw / 3);
+  flex-wrap: wrap;
 }
 
-.box img {
-  object-fit: contain;
+.bg {
+  width: 50%;
+  height: 50%;
+  position: relative;
 }
 
-.box.one {
+.bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.bg.center {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  overflow: auto;
+}
+
+.bg.center img {
+  position: static;
+  transform: translate(0);
+}
+
+.bg.one {
   background-color: #a2d39b;
   box-shadow: inset 0 0 0 15px #d1e9cd;
 }
 
-.box.two {
+.bg.two {
   background-color: #0093ce;
 }
 
-.box.three {
+.bg.three {
   background-color: #61082b;
 }
-.box.four {
+.bg.four {
   background-color: #ff1c1c;
 }
 
-.box.five {
+.bg.five {
   background-color: #d5001f;
 }
 
-.box.six {
+.bg.six {
   background-color: #0d2481;
 }
 
-.box.seven {
+.bg.seven {
   background-color: #b4d0e7;
 }
 
-.box.eight {
+.bg.eight {
   background-color: #ffd830;
 }
 
