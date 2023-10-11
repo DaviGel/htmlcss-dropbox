@@ -74,6 +74,10 @@
   margin: 52px 0 37px 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .separator {
   width: 48px;
   margin: 40px 0 54px 0;
@@ -98,12 +102,12 @@
 }
 
 .blue-color {
-  color: (--blue-color);
+  color: var(--blue-color);
 }
 
 .link-style {
-  color: (--blue-color);
-  text-decoration-color: (--blue-color);
+  color: var(--blue-color);
+  text-decoration-color: var(--blue-color);
 }
 
 .mb150 {
@@ -221,34 +225,47 @@ main .first-input {
   margin-right: 50px;
 }
 
-main .three-col-layout {
+main .four-col-layout {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 50px;
 }
 
-main .three-col-layout i {
+main .four-col-layout header {
+  border: 1px solid #d0d0d3;
+  padding: 13px 110px;
+}
+
+main .four-col-layout .fourth.col {
+  flex-grow: 1;
+}
+
+main .four-col-layout .bottom-content {
+  border: 1px solid #d0d0d3;
+  padding: 40px 30px;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+main .four-col-layout .bottom-content li {
+  list-style-type: none;
+}
+
+main .four-col-layout .bottom-content li a {
+  text-decoration: none;
+  color: white;
+}
+
+main .four-col-layout i {
   margin-right: 5px;
 }
 
-main .first-col,
-main .second-col,
-main .third-col {
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 300px;
+main .four-col-layout .bottom-content .n-user {
+  margin-top: 55px;
 }
 
-main .top-content {
-  border: 1px solid #d0d0d3;
-  padding: 13px 110px;
-  text-align: center;
-}
-
-main .three-col-layout .bottom-content {
-  border: 1px solid #d0d0d3;
-  padding: 40px 30px;
-  flex-grow: 1;
+main .four-col-layout .bottom-content .periodo {
+  margin-top: 19px;
 }
 
 main .bottom-content .prezzo {
@@ -256,26 +273,15 @@ main .bottom-content .prezzo {
   display: inline-block;
 }
 
-main .three-col-layout .bottom-content .periodo {
-  margin-top: 19px;
-}
-
-main .three-col-layout .bottom-content .n-user {
-  margin-top: 55px;
+main .first.col,
+main .second.col,
+main .third.col {
+  width: 300px;
+  flex-direction: column;
 }
 
 main .bottom-element {
   margin-top: 27px;
-}
-
-main .one-col-layout {
-  margin-top: 50px;
-}
-
-main .one-col-layout .flex-container {
-  align-items: flex-start;
-  border: 1px solid #d0d0d3;
-  padding: 40px 30px;
 }
 
 main .hero-section {
