@@ -1,0 +1,75 @@
+/* #region COMMON */
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* #endregion */
+
+/* #region MAIN */
+
+main .hero-section {
+  justify-content: flex-start;
+}
+
+main .hero-section.d-flex .left-message {
+  width: 70%;
+}
+
+main .hero-section.d-flex .left-message img {
+  width: 100%;
+}
+
+main .hero-section.d-flex .right-message {
+  background-color: #1e1919;
+  width: 30%;
+  padding: 89px 80px 152px;
+}
+
+main .message {
+  font-size: 25px;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+main .hero-section.d-flex .right-message button {
+  width: 100%;
+  text-align: center;
+  padding: 9px 20px;
+  margin-bottom: 11px;
+  border: 1px solid var(--blue-color);
+}
+
+main .central.message {
+  color: #1e1919;
+  margin: 100px 0 60px 0;
+}
+
+main .form.d-flex {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+main .box {
+  /* Assegno un a dimensione fissa per farli wrappare al diminuire dello schermo
+  width: calc(100% / 2 - 15px); */
+  width: 526px;
+}
+
+main .form.d-flex input {
+  height: 44px;
+  width: 100%;
+}
+
+main .dimensions {
+  margin: 50px 0 100px 0;
+  padding: 6px 50px;
+}
+
+main .button.blue.mb30 {
+  margin-bottom: 30.24px;
+}
+
+/* #endregion */
