@@ -81,7 +81,8 @@ main .form.d-flex label {
 }
 
 main .form.d-flex textarea,
-main .form.d-flex select {
+main .form.d-flex select,
+main .form.d-flex input {
   padding: 10px;
 }
 
