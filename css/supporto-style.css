@@ -68,6 +68,11 @@ main .form.d-flex textarea {
   padding: 10px;
 }
 
+.required label::after {
+  content: ' *';
+  color: red;
+}
+
 main .dimensions {
   margin: 50px 0 100px 0;
   padding: 6px 50px;
