@@ -5,6 +5,15 @@
   margin: 0 auto;
 }
 
+.mb30 {
+  margin-bottom: 30.24px;
+}
+
+.b-color {
+  background-color: #0073b1;
+  color: white;
+}
+
 /* #endregion */
 
 /* #region MAIN */
@@ -62,6 +71,13 @@ main .form.d-flex input,
 #help {
   height: 44px;
   width: 100%;
+  margin: 30px 0;
+  color: #1e1919;
+}
+
+main .form.d-flex label {
+  font-size: 13px;
+  color: #1e1919;
 }
 
 main .form.d-flex textarea,
@@ -77,10 +93,6 @@ main .form.d-flex select {
 main .dimensions {
   margin: 50px 0 100px 0;
   padding: 6px 50px;
-}
-
-main .button.blue.mb30 {
-  margin-bottom: 30.24px;
 }
 
 /* #endregion */
