@@ -58,9 +58,14 @@ main .box {
   width: 526px;
 }
 
-main .form.d-flex input {
+main .form.d-flex input,
+#help {
   height: 44px;
   width: 100%;
+}
+
+main .form.d-flex textarea {
+  padding: 10px;
 }
 
 main .dimensions {

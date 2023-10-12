@@ -71,7 +71,7 @@
       <!-- Main container -->
       <div class="container">
         <!-- Central content -->
-        <section>
+        <form>
           <div class="central message">
             Contatta il team di vendita di Dropbox
           </div>
@@ -99,11 +99,27 @@
               <label for="company">Azienda</label><br />
               <input type="text" id="company" name="company" required />
             </div>
+            <div class="box company">
+              <label for="job">Mansione</label><br />
+              <input type="text" id="job" name="job" />
+            </div>
+            <div class="box paese">
+              <label for="help">Paese</label><br />
+              <select id="help" name="help" required>
+                <option value="option">Seleziona...</option>
+                <option value="option1">Italia</option>
+                <option value="option2">Francia</option>
+                <option value="option3">Spagna</option>
+                <option value="option4">Inghilterra</option>
+                <option value="option4">Germania</option>
+              </select>
+            </div>
             <div class="box help">
               <label for="help"
                 >Come può aiutarti il nostro team di vendita?</label
               ><br />
-              <select id="help" name="help">
+              <select id="help" name="help" required>
+                <option value="option">Seleziona...</option>
                 <option value="option1">
                   Valuta Dropbox per la tua organizzazione
                 </option>
@@ -126,13 +142,15 @@
                 name="w3review"
                 rows="4"
                 cols="50"
+                placeholder="Comunicaci eventuali informazioni aggiuntive relative alle tue esigenze aziendali."
+                required
               ></textarea>
             </div>
           </div>
           <div class="box sumbit">
             <button class="button blue dimensions">Invia</button>
           </div>
-        </section>
+        </form>
         <!-- /Central content -->
       </div>
       <!-- /Main container -->
